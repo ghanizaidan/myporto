@@ -1,3 +1,9 @@
+.carousel-img {
+    width: 100%;
+    height: 350px; /* Ubah nilai height sesuai kebutuhan */
+    object-fit: cover;
+    object-position: center;
+    }
 
 /* button glow start */
 
@@ -91,3 +97,4 @@
     }
 
     /* button glow end */
+}

@@ -6,6 +6,24 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>ghani-homepage</title>
+    <script>
+      function showResult(str) {
+        if (str.length==0) {
+          document.getElementById("livesearch").innerHTML="";
+          document.getElementById("livesearch").style.border="0px";
+          return;
+        }
+        var xmlhttp=new XMLHttpRequest();
+        xmlhttp.onreadystatechange=function() {
+          if (this.readyState==4 && this.status==200) {
+            document.getElementById("livesearch").innerHTML=this.responseText;
+            document.getElementById("livesearch").style.border="1px solid #A5ACB2";
+          }
+        }
+        xmlhttp.open("GET","livesearch.php?q="+str,true);
+        xmlhttp.send();
+      }
+      </script>
 </head>
 <body class="bg-dark">
     <!-- nav section start -->
@@ -35,7 +53,8 @@
               </li>
             </ul>
             <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" onkeyup="showResult(this.value)">
+              <div id="livesearch"></div>
               <button class="btn btn-outline-light" type="submit">Search</button>
             </form>
           </div>
@@ -56,24 +75,24 @@
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="assets/image 1.jpg" class="d-block w-100" alt="image 1" style="height: 400px;">
+              <img src="assets/people-coding.jpg" class="carousel-img d-block w-100" alt="image 1" style="height: 400px;">
               <div class="carousel-caption d-md-block">
-                <h5>First slide label</h5>
-                <p>Some representative placeholder content for the first slide.</p>
+                <h5>Hi, I'm Ghani</h5>
+                <p>I just started programming</p>
               </div>
             </div>
             <div class="carousel-item">
-              <img src="assets/image 2.jpg" class="d-block w-100" alt="image 2" style="height: 400px;">
-              <div class="carousel-caption d-md-block">
-                <h5>Second slide label</h5>
-                <p>Some representative placeholder content for the second slide.</p>
+              <img src="assets/AI-Python-Libraries.webp" class="carousel-img d-block w-100" alt="image 2" style="height: 400px;">
+              <div class="carousel-caption ">
+                <h5>programming language</h5>
+                <p>My favorite programming language is Python.</p>
               </div>
             </div>
-            <div class="carousel-item">
-              <img src="assets/image 3.jpg" class="d-block w-100" alt="panyet" style="height: 400px;">
+            <div class="carousel-item ">
+              <img src="assets/Globaliasoft-Way-to-Become-a-Web-Developer.jpg" class="carousel-img d-block w-100" alt="panyet" style="height: 400px;">
               <div class="carousel-caption d-md-block">
-                <h5>Third slide label</h5>
-                <p>Some representative placeholder content for the third slide.</p>
+                <h5>my favorite field</h5>
+                <p>Web developer</p>
               </div>
             </div>
           </div>
