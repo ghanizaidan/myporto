@@ -7,52 +7,41 @@
     <title>ghani-about</title>
 </head>
 <body>
-    <!-- nav section start -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">MyPorto</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/about">About</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Others
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="/contact">Contact</a></li>
-                  <li><a class="dropdown-item" href="/gallery">Gallery</a></li>
-                  <li><a class="dropdown-item" href="/sosmed">Sosmed</a></li>
-                </ul>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
+
+     <!-- nav section start -->
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-light sticky-top" >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/myporto"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/myporto">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/myporto/about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/myporto/linktree">Link Tree</a>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" onkeyup="showResult(this.value)">
+            <div id="livesearch"></div>
+            <button class="btn btn-outline-light" type="submit">Search</button>
+          </form>
         </div>
-      </nav>
-      <!-- nav section finish -->
+      </div>
+    </nav>
+    <!-- nav section end -->
 
       <!-- first layout start -->
-      <div class="container-fluid bg-dark text-light" style="height: 100vh">
-        <div class="row text-center align-items-center">
-            <div class="col-8">
-                about page
-            </div>
-            <div class="col-4">
-                <img src="https://images.shiksha.com/mediadata/ugcDocuments/images/wordpressImages/2021_12_Difference-Between-Algorithm-and-Program.jpg" alt="my image" style="width: 100%;">
-            </div>
-        </div>
-    </div>
+      
+      <div class="alert alert-dark" role="alert">
+        SORRY THIS PAGE IS UNDER MAINTENANCE :)
+      </div>
+      
     <!-- first layout end -->
 
 
