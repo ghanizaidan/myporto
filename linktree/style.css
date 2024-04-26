@@ -1,10 +1,4 @@
 
-.carousel-img {
-    width: 100%;
-    height: 350px; /* Ubah nilai height sesuai kebutuhan */
-    object-fit: cover;
-    object-position: center;
-    }
 
 /* button glow start */
 
@@ -23,6 +17,7 @@
 
 .glow-on-hover:before {
     content: '';
+    
     background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
     position: absolute;
     top: -2px;
@@ -30,12 +25,9 @@
     background-size: 400%;
     z-index: -1;
     filter: blur(20px);
-    width: calc(100% + 4px);
     height: calc(100% + 4px);
+    width: calc(100% + 4px);
     animation: glowing 20s linear infinite;
-    opacity: 0;
-    transition: opacity .3s ease-in-out;
-    border-radius: 10px;
 }
 
 .glow-on-hover:active {
@@ -75,27 +67,4 @@
 }
 
 
-.loading {
-    position: relative;
-}
 
-.loading span {
-    position: relative;
-    display: inline-block;
-    font-size: 30px;
-    color: #fff;
-    text-transform: uppercase;
-    animation: nrs 3s infinite;
-    animation-delay: calc(.3s * var(--i))
-}
-
-
-@keyframes nrs {
-
-    0%,
-    80% {
-        transform: rotateZ(720deg)
-    }
-
-    /* button glow end */
-}
