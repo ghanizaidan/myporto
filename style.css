@@ -6,6 +6,7 @@
     object-position: center;
     }
 
+
 /* button glow start */
 
 .glow-on-hover {
@@ -33,9 +34,6 @@
     width: calc(100% + 4px);
     height: calc(100% + 4px);
     animation: glowing 20s linear infinite;
-    opacity: 0;
-    transition: opacity .3s ease-in-out;
-    border-radius: 10px;
 }
 
 .glow-on-hover:active {
@@ -72,30 +70,4 @@
     100% {
         background-position: 0 0;
     }
-}
-
-
-.loading {
-    position: relative;
-}
-
-.loading span {
-    position: relative;
-    display: inline-block;
-    font-size: 30px;
-    color: #fff;
-    text-transform: uppercase;
-    animation: nrs 3s infinite;
-    animation-delay: calc(.3s * var(--i))
-}
-
-
-@keyframes nrs {
-
-    0%,
-    80% {
-        transform: rotateZ(720deg)
-    }
-
-    /* button glow end */
 }
